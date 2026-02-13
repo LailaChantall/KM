@@ -1,5 +1,14 @@
 # Astro Starter Kit: Minimal
 
+Vi har følgende komponenter 
+
+Footer - 
+
+Header -
+
+
+
+
 ```sh
 npm create astro@latest -- --template minimal
 ```
