@@ -1,52 +1,144 @@
-  <div>
+   <div>
             <div class="karouselboks">
                 <div class="karousel">
-                    <h1 class="titel">I'M STILL HERE</h1>
                     <div class="karousel-track">
                         <span class="arrow arrow-left">&#10094;</span>
 
                         <a class="day" href="biografsal.html">
-                            <p class="day-name">MAN</p>
-                            <p class="day-date">1/12</p>
-                            <p class="day-time">12:00</p>
+                          <img src="billeder-carousel/billede1.png" alt="">
                         </a>
 
                         <a class="day" href="biografsal.html">
-                            <p class="day-name">TIRS</p>
-                            <p class="day-date">2/12</p>
-                            <p class="day-time">12:00</p>
+                           <img src="billeder-carousel/billede2.png" alt="">
                         </a>
 
                         <a class="day" href="biografsal.html">
-                            <p class="day-name">ONS</p>
-                            <p class="day-date">3/12</p>
-                            <p class="day-time">12:00</p>
+                            <img src="billeder-carousel/billede 3.png" alt="">
                         </a>
 
                         <a class="day" href="biografsal.html">
-                            <p class="day-name">TORS</p>
-                            <p class="day-date">4/12</p>
-                            <p class="day-time">12:00</p>
+                           <img src="billeder-carousel/billede4.png" alt="">
                         </a>
 
                         <a class="day" href="biografsal.html">
-                            <p class="day-name">FRE</p>
-                            <p class="day-date">5/12</p>
-                            <p class="day-time">12:00</p>
+                         <img src="billeder-carousel/billede 5.png" alt="">   
                         </a>
 
                         <a class="day" href="biografsal.html">
-                            <p class="day-name">LØR</p>
-                            <p class="day-date">5/12</p>
-                            <p class="day-time">12:00</p>
+                          <img src="billeder-carousel/billede 6.png" alt="">
                         </a>
 
                         <a class="day" href="biografsal.html">
-                            <p class="day-name">SØN</p>
-                            <p class="day-date">6/12</p>
-                            <p class="day-time">12:00</p>
+                          <img src="billeder-carousel/billede 7.png" alt="">
                         </a>
 
                         <span class="arrow arrow-right">&#10095;</span>
                     </div>
                 </div>
+
+                <style>
+/******karousel*******/
+
+body {
+    background-color: #644864;
+}
+
+img {
+    size: 100%;
+}
+
+.karousel {
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+.karousel-track {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 2.5rem;
+  background-color: #786078; /* mørk biograf-baggrund */
+  border-radius: 999px;
+  overflow-x: auto; /* kan scrolle vandret hvis der er for mange dage */
+  scrollbar-width: none; /* Firefox: skjul scrollbar */
+}
+
+.karousel-track::-webkit-scrollbar {
+  display: none; /* Chrome/Safari: skjul scrollbar */
+}
+
+/* Dagskortene (billetter) */
+.day {
+  min-width: 400px;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  color: white;
+  font-family: "Limelight", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+
+
+.day:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  background-color: #644864;
+}
+
+/* Typografi inde i dagen */
+.day-name {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.day-date {
+  font-size: 0.85rem;
+}
+
+.day-time {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+/* "Pile" – rent visuelt (du kan senere koble JS på hvis du vil) */
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: white;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow-left {
+  margin-right: 0.25rem;
+}
+
+.arrow-right {
+  margin-left: 0.25rem;
+}
+
+/* Mobil: fyld hele bredden og lidt større kort */
+@media (max-width: 600px) {
+  .karousel-track {
+    border-radius: 0;
+  }
+
+  .day {
+    min-width: 110px;
+  }
+}
+
+                </style>
+
+                <script>
+                    
+                </script>
