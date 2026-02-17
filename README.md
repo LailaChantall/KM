@@ -9,7 +9,7 @@ Header -
 
 
 
-```sh
+```sh  
 npm create astro@latest -- --template minimal
 ```
 
